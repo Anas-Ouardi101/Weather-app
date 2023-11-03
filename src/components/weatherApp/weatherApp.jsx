@@ -23,7 +23,7 @@ const WeatherApp = () =>{
     const [sunrise,setSunrise] = useState();
     const [sunset,setSunset] = useState();
 
-    let api_key = "a0eda3ea5ca91d241f0d88719e2d63ee";
+    let api_key = import.meta.env.VITE_api_key;
     const search = async () =>{
         const element = document.getElementById('cityInput');
         if(element.value === ""){
